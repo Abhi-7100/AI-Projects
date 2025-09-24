@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Tutor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <!-- Logo -->
+    <img src="{{ url_for('static', filename='AI tutor logo.jpg') }}" class="logo">
+
+    <!-- Title Box -->
+    <div class="title-box">
+        <span class="ai">AI</span><span class="tutor"> Tutor</span>
+    </div>
+
+    <!-- Chat/Answer Box -->
+    <div class="answer-box">
+        {% for sender, msg in chat_history %}
+            <p><b>{{ sender }}:</b> {{ msg }}</p>
+        {% endfor %}
+    </div>
+
+    <!-- Question Box -->
+    <form method="POST" class="question-form">
+        <textarea name="question" placeholder="Type the question right here" required></textarea>
+        <button type="submit">Send</button>
+    </form>
+
+    <!-- Rolling Text -->
+    <div class="rolling-text">Math Tutor</div>
+</body>
+</html>

@@ -1,0 +1,108 @@
+/* Page Outline */
+body {
+    border: 5px solid green;
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: #f9f9f9;
+    overflow-x: hidden;
+}
+
+/* Logo */
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+    animation: spin 4s linear infinite;
+}
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to   { transform: rotate(360deg); }
+}
+
+/* Title Box */
+.title-box {
+    width: 200px;
+    height: 50px;
+    background: white;
+    margin: 80px auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    font-size: 28px;
+    font-weight: bold;
+}
+.ai {
+    color: green;
+    animation: blink 1s infinite;
+}
+@keyframes blink {
+    50% { opacity: 0; }
+}
+.tutor {
+    color: black;
+}
+
+/* Answer Box (Chat style) */
+.answer-box {
+    width: 400px;
+    height: 300px;
+    background: #e8f0fe;
+    margin: 40px auto;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 14px;
+    text-align: left;
+    overflow-y: auto;
+}
+.answer-box p {
+    margin: 5px 0;
+}
+
+/* Question Box */
+.question-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+}
+textarea {
+    width: 300px;
+    height: 100px;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+button {
+    margin-left: 10px;
+    height: 40px;
+    padding: 0 20px;
+    background: green;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+button:hover {
+    background: darkgreen;
+}
+
+/* Rolling Text */
+.rolling-text {
+    position: fixed;
+    bottom: 10px;
+    left: -200px;
+    font-size: 20px;
+    font-weight: bold;
+    color: green;
+    animation: roll 4s linear infinite;
+}
+@keyframes roll {
+    from { left: -200px; }
+    to   { left: 100%; }
+}
