@@ -87,6 +87,7 @@ python app.py
 
 Open browser → http://127.0.0.1:5000/
 
+---
 
 ## 🎯 Usage
 
@@ -98,6 +99,7 @@ Open browser → http://127.0.0.1:5000/
 
 3. Continue asking questions – the chat history is preserved within your sessions 
 
+---
 
 ## 🔮 Future Enhancements
 
@@ -109,6 +111,7 @@ Open browser → http://127.0.0.1:5000/
 
 📱 Responsive UI for mobile learning
 
+---
 
 # 🤝 Contribution
 
